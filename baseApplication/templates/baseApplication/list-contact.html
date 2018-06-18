@@ -3,6 +3,9 @@
 {% block content %}
     <div class="main-list">
         <div class="left">
+        {% if contacts.count == 0 %}
+            <h2>No contacts in your directory</h2>
+        {% else %}
             {% for contact in contacts %}
             <div class="content">
                 <div class="text">
@@ -11,6 +14,7 @@
                 </div>
             </div>
             {% endfor %}
+        {% endif %}
         </div>
     </div>
 {% endblock %}
