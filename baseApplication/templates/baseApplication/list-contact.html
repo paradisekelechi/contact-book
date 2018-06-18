@@ -3,12 +3,14 @@
 {% block content %}
     <div class="main-list">
         <div class="left">
+            {% for contact in contacts %}
             <div class="content">
                 <div class="text">
-                    <h4>Contact Name</h4>
-                    <h5>Contact Email</h5>
+                    <h4>{{ contact.name }}</h4>
+                    <h5>{{ contact.email }}</h5>
                 </div>
             </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}
