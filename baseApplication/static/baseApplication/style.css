@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Spirax');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Spirax', serif;
+}
+
+ul.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #28282b;
+    color: #fff;
+    list-style: none;
+    font-family: 'Spirax', serif;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    font-family: 'Spirax', serif;
+}
+
+.left{
+    height: 700px;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #f4ae01;
+    color: #28282b;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-add .left .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-list .left .content{
+    padding: 20px;
+    text-align: center;
+}
+
+.left .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.left .content .text{
+    text-align: right;
+}
+
+.content button, .content input{
+    width: 240px;
+    font-family: 'Spirax', serif;
+    font-size: 16px;
+    padding: 13px;
+    margin: 10px;
+}
+
+
+.left .content button{
+    color: #fff;
+    background-color: #28282b;
+    border: 2px solid #28282b;
+}
+
+.left .content button:hover{
+    color: #28282b;
+    background-color: #f4ae01;
+    border: 2px solid #28282b;
+}
+
+.right .content button{
+    color: #28282b;
+    background-color: #f4ae01;
+    border: 2px solid #f4ae01;
+}
+
+.right .content button:hover{
+    color: #f4ae01;
+    background-color: #28282b;
+    border: 2px solid #f4ae01;
+}
+
+.right .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right{
+    height: 700px;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    color: #f4ae01;
+    background-color: #28282b;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-add{
+    display: flex;
+    justify-content: center;
+    font-family: 'Spirax', serif;
+}
+
+.main-list{
+    display: flex;
+    justify-content: center;
+    font-family: 'Spirax', serif;
+}
+
+.main-list .left{
+    height: 700px;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    color: #f4ae01;
+    background-color: #28282b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.main-list .left .content{
+    width: 23%;
+    border: 2px solid #f4ae01;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-add .left{
+    height: 700px;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #f4ae01;
+    color: #28282b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul a li{
+    color: #fff;
+    text-decoration: none;
+}
+
+.content label{
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Spirax', serif;
+    }
+    .left, .right{
+        width: 100%;
+        height: 382px;
+    }
+
+    .main-add .left{
+        height: 850px;
+    }
+
+    .main-list .left{
+        min-height: 850px;
+    }
+    .main-list .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-list .left .content{
+        width: 100%;
+    }
+}

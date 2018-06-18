@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="/add" method="post">{% csrf_token %}
+        <div class="main-add">
+            <div class="left">
+                <div class="content">
+                    <div class="text">
+                        <h2>Add New Contact</h2>
+                    </div>
+                    <button type="submit">Add Contact</button>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}
