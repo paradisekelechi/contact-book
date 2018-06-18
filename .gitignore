@@ -27,4 +27,5 @@ venv/
 
 .idea/
 
-Contact/__pycache__/
+**/__pycache__/
+**/migrations/
